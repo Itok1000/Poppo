@@ -23,4 +23,3 @@ Things you may want to cover:
 
 * ...
 # Poppo
-鳩除けサウンド再生ミニアプリです
