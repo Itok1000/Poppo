@@ -1,25 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Poppoとは
 
-Things you may want to cover:
+鳩の嫌いな音を用いて、鳩を寄せつかないようにするミニアプリです
+家で鳩がベランダにきて困っている母のために作りました
 
-* Ruby version
+鳩の天敵「カラスの鳴き声」を用いております
+再生するとそのままループ再生されるので、音声途切れずに再生できます
 
-* System dependencies
+音量調整、再生速度の調整も可能ですので、ご自由に調整してみてください
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# Poppo
+##　注意事項
+鳩の嫌いな音を収録しておりますが、必ずしも効果があると保証されておりません
+こちらからの責任は負いかねない認識ですので、あらかじめご了承ください
