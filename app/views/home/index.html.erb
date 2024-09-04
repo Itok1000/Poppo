@@ -1,0 +1,71 @@
+<div class="text-lg font-bold text-gray-800">
+  Poppo
+</div>
+<div class="text">
+  鳩の嫌いな音を収録しています
+  家に鳩が来て困る場合に是非お使いください
+</div>
+<div class="text">
+  カラスの鳴き声１
+</div>
+<audio id="crow-audio" controls loop>
+  <source src="<%= asset_path('crow_sound.mp3') %>" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  document.getElementById('volume').addEventListener('input', function(event) {
+    var audio = document.getElementById('crow-audio');
+    audio.volume = event.target.value;
+  });
+
+  document.getElementById('start-button').addEventListener('click', function() {
+    var timerValue = document.getElementById('timer').value * 1000; // ミリ秒に変換
+    setTimeout(function() {
+      var audio = document.getElementById('crow-audio');
+      audio.play();
+    }, timerValue);
+  });
+
+  document.getElementById('stop-button').addEventListener('click', function() {
+    var audio = document.getElementById('crow-audio');
+    audio.pause();
+    audio.currentTime = 0;
+  });
+</script>
+<div class="text">
+  カラスの鳴き声２
+</div>
+<audio id="crow-audio" controls loop>
+  <source src="<%= asset_path('crow_sound2.mp3') %>" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  document.getElementById('volume').addEventListener('input', function(event) {
+    var audio = document.getElementById('crow-audio');
+    audio.volume = event.target.value;
+  });
+
+  document.getElementById('start-button').addEventListener('click', function() {
+    var timerValue = document.getElementById('timer').value * 1000; // ミリ秒に変換
+    setTimeout(function() {
+      var audio = document.getElementById('crow-audio');
+      audio.play();
+    }, timerValue);
+  });
+
+  document.getElementById('stop-button').addEventListener('click', function() {
+    var audio = document.getElementById('crow-audio');
+    audio.pause();
+    audio.currentTime = 0;
+  });
+</script>
+<div class="text">
+  ※必ずしも効果があると保証されておりませんので、責任は負いかねない認識です
+</div>
+<div class="text">
+  あらかじめご了承ください
+</div>
+
+
