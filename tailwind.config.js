@@ -6,7 +6,21 @@ module.exports = {
     './app/assets/stylesheets/**/*.css'
   ],
   theme: {
-    extend: {},
+    screens: {
+      'md': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+    },
+    container: {
+      center: true,
+    },
+    extend: {
+      backgroundImage: {
+      'top-bg': "url('/assets/top.png')",
+      'footer-texture': "url('/img/footer-texture.png')",
+    }},
   },
   plugins: [],
 }
